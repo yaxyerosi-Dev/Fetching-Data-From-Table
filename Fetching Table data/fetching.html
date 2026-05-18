@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Table</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+
+<div class="bg-white p-6 rounded-lg shadow-lg w-[700px]">
+
+    <h1 class="text-2xl font-bold mb-4">
+        Product List
+    </h1>
+
+    <button
+        onclick="getList()"
+        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 font-bold"
+    >
+        Get Products
+    </button>
+
+    <table class="w-full mt-4 border border-gray-300 text-center">
+
+        <thead class="bg-blue-500 text-white">
+            <tr>
+                <th class="border p-2">Product ID</th>
+                <th class="border p-2">Product Name</th>
+                <th class="border p-2">Price</th>
+                <th class="border p-2">Quantity</th>
+            </tr>
+        </thead>
+
+        <tbody id="list">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<script src="fetching.js"></script>
+
+</body>
+</html>
